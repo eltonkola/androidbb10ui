@@ -8,52 +8,289 @@
 package com.eltonkola.bb10ui;
 
 public final class R {
+    public static final class anim {
+        public static int side_navigation_fade_in=0x7f040000;
+        public static int side_navigation_fade_out=0x7f040001;
+        public static int side_navigation_in_from_right=0x7f040002;
+        public static int side_navigation_out_to_right=0x7f040003;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static int black=0x7f040000;
-        public static int holo_blue_bright=0x7f040004;
-        public static int orange=0x7f040003;
-        public static int transparent=0x7f040001;
-        public static int white=0x7f040002;
+        /**  
+100% — FF
+95% — F2
+90% — E6
+85% — D9
+80% — CC
+75% — BF
+70% — B3
+65% — A6
+60% — 99
+55% — 8C
+50% — 80
+45% — 73
+40% — 66
+35% — 59
+30% — 4D
+25% — 40
+20% — 33
+15% — 26
+10% — 1A
+5% — 0D
+0% — 00
+ 
+         */
+        public static int black=0x7f050000;
+        public static int dark_disabled=0x7f05000b;
+        public static int dark_link=0x7f05000c;
+        public static int dark_primary=0x7f050009;
+        public static int dark_secondary=0x7f05000a;
+        public static int light_disabled=0x7f050007;
+        public static int light_link=0x7f050008;
+        public static int light_primary=0x7f050005;
+        public static int light_secondary=0x7f050006;
+        public static int slide_bg_background=0x7f050003;
+        public static int slide_bg_list_divider_color=0x7f050004;
+        public static int slide_row_selected=0x7f05000d;
+        public static int transparent=0x7f050001;
+        public static int white=0x7f050002;
+    }
+    public static final class dimen {
+        public static int right_slide_width=0x7f060000;
+        public static int txt_large=0x7f060006;
+        public static int txt_medium=0x7f060004;
+        public static int txt_primary=0x7f060005;
+        public static int txt_small=0x7f060003;
+        public static int txt_x_large=0x7f060007;
+        public static int txt_x_small=0x7f060002;
+        public static int txt_xx_large=0x7f060008;
+        public static int txt_xx_small=0x7f060001;
     }
     public static final class drawable {
-        public static int actionbar_selector=0x7f020000;
-        public static int app_icon=0x7f020001;
-        public static int bar_bottom_but=0x7f020002;
-        public static int bg=0x7f020003;
-        public static int bottom_bar_bg=0x7f020004;
-        public static int but_back_normal=0x7f020005;
-        public static int ic_launcher=0x7f020006;
+        public static int app_icon=0x7f020000;
+        public static int background=0x7f020001;
+        public static int bar_bottom_back=0x7f020002;
+        public static int bar_bottom_left=0x7f020003;
+        public static int bar_bottom_simple=0x7f020004;
+        public static int bar_bottom_tab=0x7f020005;
+        public static int bar_bottom_tab_active=0x7f020006;
+        public static int bar_but_back_hover=0x7f020007;
+        public static int bar_but_back_normal=0x7f020008;
+        public static int bar_but_left_hover=0x7f020009;
+        public static int bar_but_left_normal=0x7f02000a;
+        public static int bar_but_simple_hover=0x7f02000b;
+        public static int bar_but_simple_normal=0x7f02000c;
+        public static int bar_but_tab_active_hover=0x7f02000d;
+        public static int bar_but_tab_active_normal=0x7f02000e;
+        public static int bar_but_tab_hover=0x7f02000f;
+        public static int bar_but_tab_normal=0x7f020010;
+        public static int bg=0x7f020011;
+        public static int bg_new_sfutt_nr=0x7f020012;
+        public static int bottom_bar_bg=0x7f020013;
+        public static int btn_check_off=0x7f020014;
+        public static int btn_check_off_disable=0x7f020015;
+        public static int btn_check_off_disable_focused=0x7f020016;
+        public static int btn_check_off_disabled=0x7f020017;
+        public static int btn_check_off_disabled_focused=0x7f020018;
+        public static int btn_check_off_focused=0x7f020019;
+        public static int btn_check_off_normal=0x7f02001a;
+        public static int btn_check_off_pressed=0x7f02001b;
+        public static int btn_check_on=0x7f02001c;
+        public static int btn_check_on_disabled=0x7f02001d;
+        public static int btn_check_on_disabled_focused=0x7f02001e;
+        public static int btn_check_on_focused=0x7f02001f;
+        public static int btn_check_on_pressed=0x7f020020;
+        public static int btn_checkbox=0x7f020021;
+        public static int btn_default_disabled=0x7f020022;
+        public static int btn_default_disabled_focused=0x7f020023;
+        public static int btn_default_focused=0x7f020024;
+        public static int btn_default_normal=0x7f020025;
+        public static int btn_default_pressed=0x7f020026;
+        public static int btn_radio=0x7f020027;
+        public static int btn_radio_off=0x7f020028;
+        public static int btn_radio_off_disabled=0x7f020029;
+        public static int btn_radio_off_disabled_focused=0x7f02002a;
+        public static int btn_radio_off_focused=0x7f02002b;
+        public static int btn_radio_off_pressed=0x7f02002c;
+        public static int btn_radio_on=0x7f02002d;
+        public static int btn_radio_on_disabled=0x7f02002e;
+        public static int btn_radio_on_disabled_focused=0x7f02002f;
+        public static int btn_radio_on_focused=0x7f020030;
+        public static int btn_radio_on_pressed=0x7f020031;
+        public static int button=0x7f020032;
+        public static int close=0x7f020033;
+        public static int core_crosscutmenu_bg=0x7f020034;
+        public static int core_crosscutmenu_selected=0x7f020035;
+        public static int crosscutmenu_paste=0x7f020036;
+        public static int dialog_bottom=0x7f020037;
+        public static int dialog_divider_horizontal=0x7f020038;
+        public static int dialog_full=0x7f020039;
+        public static int dialog_middle=0x7f02003a;
+        public static int dialog_top=0x7f02003b;
+        public static int drag_bar=0x7f02003c;
+        public static int edit_text=0x7f02003d;
+        public static int generic_81_81_placeholder=0x7f02003e;
+        public static int ic_launcher=0x7f02003f;
+        public static int icon_actionoverflowmenu=0x7f020040;
+        public static int icon_blank=0x7f020041;
+        public static int icon_bookmarklink=0x7f020042;
+        public static int icon_new_stuff=0x7f020043;
+        public static int icon_saveimage=0x7f020044;
+        public static int icon_search=0x7f020045;
+        public static int icon_viewimage=0x7f020046;
+        public static int ik_divider_slide=0x7f020047;
+        public static int list_focused=0x7f020048;
+        public static int list_longpressed=0x7f020049;
+        public static int list_pressed=0x7f02004a;
+        public static int list_selector=0x7f02004b;
+        public static int list_selector_background_transition=0x7f02004c;
+        public static int list_selector_disabled=0x7f02004d;
+        public static int menu_dropdown_panel=0x7f02004e;
+        public static int menu_line=0x7f02004f;
+        public static int progress_bg=0x7f020050;
+        public static int progress_horizontal=0x7f020051;
+        public static int progress_indeterminate_horizontal=0x7f020052;
+        public static int progress_large=0x7f020053;
+        public static int progress_medium=0x7f020054;
+        public static int progress_primary=0x7f020055;
+        public static int progress_secondary=0x7f020056;
+        public static int progress_small=0x7f020057;
+        public static int progressbar_indeterminate1=0x7f020058;
+        public static int progressbar_indeterminate2=0x7f020059;
+        public static int progressbar_indeterminate3=0x7f02005a;
+        public static int progressbar_indeterminate_1=0x7f02005b;
+        public static int progressbar_indeterminate_2=0x7f02005c;
+        public static int progressbar_indeterminate_3=0x7f02005d;
+        public static int progressbar_indeterminate_4=0x7f02005e;
+        public static int progressbar_indeterminate_5=0x7f02005f;
+        public static int progressbar_indeterminate_6=0x7f020060;
+        public static int progressbar_indeterminate_7=0x7f020061;
+        public static int progressbar_indeterminate_8=0x7f020062;
+        public static int scrubber_control_disabled=0x7f020063;
+        public static int scrubber_control_focused=0x7f020064;
+        public static int scrubber_control_normal=0x7f020065;
+        public static int scrubber_control_pressed=0x7f020066;
+        public static int scrubber_control_selector=0x7f020067;
+        public static int scrubber_primary=0x7f020068;
+        public static int scrubber_progress_horizontal=0x7f020069;
+        public static int scrubber_secondary=0x7f02006a;
+        public static int scrubber_track=0x7f02006b;
+        public static int selector_side_list=0x7f02006c;
+        public static int shadow_over_bar=0x7f02006d;
+        public static int shadow_right_slide=0x7f02006e;
+        public static int shape_list_over=0x7f02006f;
+        public static int spinner_16_inner=0x7f020070;
+        public static int spinner_16_outer=0x7f020071;
+        public static int spinner_20_inner=0x7f020072;
+        public static int spinner_20_outer=0x7f020073;
+        public static int spinner_48_inner=0x7f020074;
+        public static int spinner_48_outer=0x7f020075;
+        public static int spinner_76_inner=0x7f020076;
+        public static int spinner_76_outer=0x7f020077;
+        public static int spinner_background=0x7f020078;
+        public static int spinner_default=0x7f020079;
+        public static int spinner_disabled=0x7f02007a;
+        public static int spinner_focused=0x7f02007b;
+        public static int spinner_pressed=0x7f02007c;
+        public static int textfield_activated=0x7f02007d;
+        public static int textfield_default=0x7f02007e;
+        public static int textfield_disabled=0x7f02007f;
+        public static int textfield_disabled_focused=0x7f020080;
+        public static int textfield_focused=0x7f020081;
+        public static int textfield_multiline_activated=0x7f020082;
+        public static int textfield_multiline_default=0x7f020083;
+        public static int textfield_multiline_disabled=0x7f020084;
+        public static int textfield_multiline_disabled_focused=0x7f020085;
+        public static int textfield_multiline_focused=0x7f020086;
+        public static int toogle=0x7f020087;
+        public static int toogle_off=0x7f020088;
+        public static int toogle_on=0x7f020089;
+        public static int top_menu=0x7f02008a;
     }
     public static final class id {
-        public static int actionbar_back=0x7f070000;
-        public static int actionbar_but1=0x7f070004;
-        public static int actionbar_but2=0x7f070003;
-        public static int actionbar_but3=0x7f070002;
-        public static int actionbar_but4=0x7f070001;
+        public static int actionbar_but1=0x7f0a0004;
+        public static int actionbar_but2=0x7f0a0003;
+        public static int actionbar_but3=0x7f0a0002;
+        public static int actionbar_but4=0x7f0a0001;
+        public static int actionbar_left=0x7f0a0000;
+        public static int actionbar_right=0x7f0a0005;
+        public static int content=0x7f0a000a;
+        public static int custom_menu_item_caption=0x7f0a000e;
+        public static int custom_menu_item_icon=0x7f0a000d;
+        public static int custom_menu_table=0x7f0a000c;
+        public static int icon_new=0x7f0a0011;
+        public static int main_center=0x7f0a0008;
+        public static int menu_container=0x7f0a0009;
+        public static int menu_description=0x7f0a0013;
+        public static int menu_icon=0x7f0a000f;
+        public static int menu_listview=0x7f0a0014;
+        public static int menu_name=0x7f0a0012;
+        public static int new_nr=0x7f0a0010;
+        public static int overlay=0x7f0a0015;
+        public static int shadow=0x7f0a0018;
+        public static int side_navigation_listview=0x7f0a0019;
+        public static int side_navigation_menu=0x7f0a0017;
+        public static int side_navigation_menu_item1=0x7f0a001a;
+        public static int side_navigation_menu_item2=0x7f0a001b;
+        public static int side_navigation_menu_item3=0x7f0a001c;
+        public static int side_navigation_menu_item4=0x7f0a001d;
+        public static int side_navigation_outside_view=0x7f0a0016;
+        public static int side_navigation_view=0x7f0a000b;
+        public static int slideMenu=0x7f0a0007;
+        public static int superRoot=0x7f0a0006;
     }
     public static final class layout {
         public static int actionbar=0x7f030000;
+        public static int bb10activity=0x7f030001;
+        public static int custom_menu=0x7f030002;
+        public static int custom_menu_item=0x7f030003;
+        public static int row_sides=0x7f030004;
+        public static int slide_left=0x7f030005;
+        public static int slide_right=0x7f030006;
+    }
+    public static final class menu {
+        public static int side_navigation_menu=0x7f090000;
     }
     public static final class string {
-        public static int app_name=0x7f050000;
+        public static int app_name=0x7f070000;
     }
     public static final class style {
-        /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
+        /**  BB10 theme 
+ 	<item name="android:imageButtonStyle">@style/BB10.Button</item>
+ 
          */
-        public static int AppBaseTheme=0x7f060000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
+        public static int BB10=0x7f080000;
+        public static int BB10_AlertDialog=0x7f080007;
+        public static int BB10_Button=0x7f080002;
+        public static int BB10_CheckBox=0x7f08000a;
+        public static int BB10_Dialog=0x7f080008;
+        public static int BB10_DropDownItem=0x7f080011;
+        public static int BB10_EditText=0x7f080006;
+        public static int BB10_ListView=0x7f080003;
+        /**  
+        <item name="android:animationResolution">33</item>
+         
          */
-        public static int AppTheme=0x7f060001;
+        public static int BB10_ProgressBar=0x7f08000d;
+        public static int BB10_ProgressBar_Horizontal=0x7f08000c;
+        /**  
+        <item name="android:animationResolution">33</item>
+         
+         */
+        public static int BB10_ProgressBar_Large=0x7f08000f;
+        /**  
+        <item name="android:animationResolution">33</item>
+         
+         */
+        public static int BB10_ProgressBar_Small=0x7f08000e;
+        public static int BB10_Radio=0x7f080009;
+        public static int BB10_SeekBar=0x7f08000b;
+        public static int BB10_Spinner=0x7f080010;
+        public static int BB10_SpinnerItem=0x7f080005;
+        public static int BB10_TextView=0x7f080004;
+        /**  BB10 widgets 
+         */
+        public static int BB10_Toggle=0x7f080001;
     }
 }

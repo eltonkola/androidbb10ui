@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="right_slide_width">200dp</dimen>
+    
+    <dimen name="txt_xx_small">9sp</dimen>
+    <dimen name="txt_x_small">12sp</dimen>
+    <dimen name="txt_small">14sp</dimen>
+    <dimen name="txt_medium">16sp</dimen>
+    <dimen name="txt_primary">18sp</dimen>
+    <dimen name="txt_large">20sp</dimen>
+    <dimen name="txt_x_large">24sp</dimen>
+    <dimen name="txt_xx_large">32sp</dimen>
+    
+    
+    
+</resources>

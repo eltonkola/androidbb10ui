@@ -1,8 +1,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"/>
+        android:id="@+id/icon_1"
+        android:title="Icon 1"
+        android:icon="@drawable/icon_1"
+        />
+    
+    <item
+        android:id="@+id/icon_2"
+        android:title="Icon 2"
+        android:icon="@drawable/icon_2"
+        />
+    
+    <item
+        android:id="@+id/icon_3"
+        android:title="Icon 3"
+        android:icon="@drawable/icon_3"
+        />
+    
+    <item
+        android:id="@+id/icon_4"
+        android:title="Icon 4"
+        android:icon="@drawable/icon_4"
+        />
 
 </menu>

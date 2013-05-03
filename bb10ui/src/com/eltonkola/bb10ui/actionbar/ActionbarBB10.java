@@ -66,14 +66,14 @@ public class ActionbarBB10 {
 	       
 	       
 	       
-	       actionbar_back = (ImageButton)actionbarView.findViewById(R.id.actionbar_back);
+	       actionbar_back = (ImageButton)actionbarView.findViewById(R.id.actionbar_left);
 
 	       actionbar_but1 = (ImageButton)actionbarView.findViewById(R.id.actionbar_but1);
 	       actionbar_but2 = (ImageButton)actionbarView.findViewById(R.id.actionbar_but2);
 	       actionbar_but3 = (ImageButton)actionbarView.findViewById(R.id.actionbar_but3);
 	       actionbar_but4 = (ImageButton)actionbarView.findViewById(R.id.actionbar_but4);
 	       
-	       
+	      
 	       
 //	       actionbar_back.setVisibility(View.GONE);
 	       
@@ -85,9 +85,9 @@ public class ActionbarBB10 {
 				}
 			});
 
-	       actionbar_but4.setVisibility(View.GONE);
-	       actionbar_but3.setVisibility(View.GONE);
-	       actionbar_but2.setVisibility(View.GONE);
+//	       actionbar_but4.setVisibility(View.GONE);
+//	       actionbar_but3.setVisibility(View.GONE);
+//	       actionbar_but2.setVisibility(View.GONE);
 	       
 	       actionbar_back.setOnClickListener(new OnClickListener() {
 				@Override

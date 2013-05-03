@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="2dp"
+    >
+    
+<!-- 
+   android:background="#000000"
+ -->
+    
+    <RelativeLayout 
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        >
+        
+        <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_search"
+        android:layout_centerInParent="true"
+        />
+        
+        <TextView
+            android:id="@+id/new_nr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_new_sfutt_nr"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+        
+        <ImageView
+            android:id="@+id/icon_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_new_stuff" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        >
+
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" 
+        android:text="Title"
+        android:textColor="#D3D3D3"
+        />
+    
+    <TextView
+        android:id="@+id/menu_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" 
+        android:text="Description"
+        android:textColor="#9E9E9E"
+        />
+
+    </LinearLayout>
+    
+    
+</LinearLayout>

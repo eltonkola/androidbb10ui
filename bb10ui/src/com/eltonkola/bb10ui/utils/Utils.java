@@ -12,6 +12,9 @@ public class Utils {
 	
 	//if we are in developemnt mode, or not
 	public static boolean development = true;
+
+
+	public static long slideDuration = 300;
 	
 	//logging utility
 	public static void log(String s) {

@@ -6,13 +6,18 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="10" />
-
+       />
+<!-- 
+ android:targetSdkVersion="17" 
+ -->
+ 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/BB10" 
+        android:hardwareAccelerated="true"
+        >
         <activity
             android:name="com.eltonkola.bb10uidemo.MainActivity"
             android:label="@string/app_name" >
