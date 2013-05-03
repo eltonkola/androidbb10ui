@@ -6,14 +6,32 @@
     android:gravity="center_vertical"
     android:orientation="horizontal" >
 
-    <ImageView
-        android:id="@+id/actionbar_left"
+    <RelativeLayout 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/actionbar_left"
         android:background="@drawable/bar_bottom_back"
-        android:paddingLeft="6dp"
-        android:src="@drawable/icon_blank" />
-    
+        >
+        
+        <ImageView
+        android:id="@+id/actionbar_left_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_blank" 
+        android:layout_centerInParent="true"
+        />
+
+   <ImageView
+       android:id="@+id/icon_new"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/actionbar_left_icon"
+       android:src="@drawable/icon_new_stuff" 
+       android:visibility="gone"
+       />
+
+    </RelativeLayout>
+   
     <!-- 
         <ImageView
         android:id="@+id/actionbar_left"
@@ -32,24 +50,14 @@
         android:orientation="horizontal" >
 
         <ImageView
-            android:id="@+id/actionbar_but4"
+            android:id="@+id/actionbar_but1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:scaleType="center"
             android:clickable="true"
             android:background="@drawable/bar_bottom_tab_active"
-            android:src="@drawable/icon_search" />
-
-        <ImageView
-            android:id="@+id/actionbar_but3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.25"
-            android:scaleType="center"
-            android:clickable="true"
-            android:background="@drawable/bar_bottom_tab"
-            android:src="@drawable/icon_saveimage" />
+            android:src="@drawable/app_icon" />
 
         <ImageView
             android:id="@+id/actionbar_but2"
@@ -58,18 +66,28 @@
             android:layout_weight="0.25"
             android:scaleType="center"
             android:clickable="true"
-            android:background="@drawable/bar_bottom_simple"
-            android:src="@drawable/icon_viewimage" />
+            android:background="@drawable/bar_bottom_tab"
+            android:src="@drawable/app_icon" />
 
         <ImageView
-            android:id="@+id/actionbar_but1"
+            android:id="@+id/actionbar_but3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:scaleType="center"
             android:clickable="true"
             android:background="@drawable/bar_bottom_simple"
-            android:src="@drawable/icon_bookmarklink" />
+            android:src="@drawable/app_icon" />
+
+        <ImageView
+            android:id="@+id/actionbar_but4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:scaleType="center"
+            android:clickable="true"
+            android:background="@drawable/bar_bottom_simple"
+            android:src="@drawable/app_icon" />
     </LinearLayout>
 
     <ImageView

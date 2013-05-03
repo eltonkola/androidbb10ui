@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Android Base Activity"
+            android:textSize="@dimen/txt_x_large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Dynamic (Show/Hide dynamic change of all features)"
+            android:textSize="@dimen/txt_medium" />
+        
+     <LinearLayout 
+     	android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_secondary"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        /> 
+      
+      <TextView android:textSize="@dimen/txt_x_large" android:layout_marginBottom="20dp"  android:layout_marginTop="20dp" android:text="Left Navigation Button" android:layout_width="match_parent" android:gravity="center"  android:layout_height="match_parent" />
+      
+      <Button android:id="@+id/button1"  android:text="Left Nav - Show as Back Button" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button2"  android:text="Left Nav - Show as Tabs" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button3"  android:text="Left Nav - Hide" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        
+        
+      <LinearLayout 
+     	android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_secondary"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        /> 
+      
+      <TextView android:textSize="@dimen/txt_x_large" android:layout_marginBottom="20dp"  android:layout_marginTop="20dp" android:text="Right Menu Actions" android:layout_width="match_parent" android:gravity="center"  android:layout_height="match_parent" />
+      
+      <Button android:id="@+id/button4"  android:text="Right Nav - Show" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button5"  android:text="Right Nav - Hide" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      
+      
+      <LinearLayout 
+     	android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_secondary"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        /> 
+      
+      <TextView android:textSize="@dimen/txt_x_large" android:layout_marginBottom="20dp"  android:layout_marginTop="20dp" android:text="Navigation buttons" android:layout_width="match_parent" android:gravity="center"  android:layout_height="match_parent" />
+      
+      <Button android:id="@+id/button6"  android:text="Nav Button1 - Show as button" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button7"  android:text="Nav Button1 - Show as tab" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button8"  android:text="Nav Button1 - Hide" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      
+         <LinearLayout 
+     	android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_link"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        /> 
+        
+      <Button android:id="@+id/button9"  android:text="Nav Button2 - Show as button" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button10"  android:text="Nav Button2 - Show as tab" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button11"  android:text="Nav Button2 - Hide" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      
+       <LinearLayout 
+     	android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_link"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        /> 
+        
+      <Button android:id="@+id/button12"  android:text="Nav Button3 - Show as button" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button13"  android:text="Nav Button3 - Show as tab" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button14"  android:text="Nav Button3 - Hide" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      
+       <LinearLayout 
+     	android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_link"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        /> 
+        
+      <Button android:id="@+id/button15"  android:text="Nav Button4 - Show as button" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button16"  android:text="Nav Button4 - Show as tab" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      <Button android:id="@+id/button17"  android:text="Nav Button4 - Hide" android:layout_width="match_parent" android:layout_height="wrap_content" />
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </LinearLayout>
+
+</ScrollView>

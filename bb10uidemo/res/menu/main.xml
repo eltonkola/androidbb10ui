@@ -3,25 +3,25 @@
     <item
         android:id="@+id/icon_1"
         android:title="Icon 1"
-        android:icon="@drawable/icon_1"
+        android:icon="@drawable/ic_email"
         />
     
     <item
         android:id="@+id/icon_2"
         android:title="Icon 2"
-        android:icon="@drawable/icon_2"
+        android:icon="@drawable/ic_rename"
         />
     
     <item
         android:id="@+id/icon_3"
         android:title="Icon 3"
-        android:icon="@drawable/icon_3"
+        android:icon="@drawable/ic_show_dialpad"
         />
     
     <item
         android:id="@+id/icon_4"
         android:title="Icon 4"
-        android:icon="@drawable/icon_4"
+        android:icon="@drawable/ic_open_link"
         />
 
 </menu>

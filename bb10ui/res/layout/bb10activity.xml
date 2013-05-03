@@ -5,7 +5,7 @@
      >
 
      <com.eltonkola.bb10ui.slide.LeftSlideView
-     	android:id="@+id/slideMenu"
+     	android:id="@+id/leftSlide"
         android:layout_width="match_parent"
         android:layout_height="match_parent" 
         />
@@ -53,7 +53,7 @@
     </LinearLayout>
     
     <com.eltonkola.bb10ui.slide.RightSlideView
-        android:id="@+id/side_navigation_view"
+        android:id="@+id/rightSlide"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

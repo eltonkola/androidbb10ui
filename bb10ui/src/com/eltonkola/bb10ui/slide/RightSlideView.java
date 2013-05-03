@@ -30,7 +30,7 @@ public class RightSlideView extends LinearLayout {
     private View outsideView;
 
     private OnSlideMenuItemClickListener callback;
-    private ArrayList<MenuItem> menuItems;
+    private ArrayList<BB10SlideMenuItem> menuItems;
 
 
     /**
@@ -109,7 +109,14 @@ public class RightSlideView extends LinearLayout {
     public void setMenuItems(int menu) {
         parseXml(menu);
         if (menuItems != null && menuItems.size() > 0) {
-            listView.setAdapter(new MenuItemAdapter( getContext() , menuItems, -1));
+            listView.setAdapter(new BB10SlideMenuItemAdapter( getContext() , menuItems, -1));
+        }
+    }
+    
+    public void setMenuItems(ArrayList<BB10SlideMenuItem> menuList) {
+        this.menuItems=menuList;
+    	if (menuItems != null && menuItems.size() > 0) {
+            listView.setAdapter(new BB10SlideMenuItemAdapter( getContext() , menuItems, -1));
         }
     }
 
@@ -167,7 +174,7 @@ public class RightSlideView extends LinearLayout {
      * @param menu - resource ID
      */
     private void parseXml(int menu) {
-        menuItems = new ArrayList<MenuItem>();
+        menuItems = new ArrayList<BB10SlideMenuItem>();
         try {
             XmlResourceParser xrp = getResources().getXml(menu);
             xrp.next();
@@ -185,7 +192,7 @@ public class RightSlideView extends LinearLayout {
                         String resId = xrp.getAttributeValue(
                                 "http://schemas.android.com/apk/res/android",
                                 "id");
-                        MenuItem item = new MenuItem();
+                        BB10SlideMenuItem item = new BB10SlideMenuItem();
                         item.setId(Integer.valueOf(resId.replace("@", "")));
                         item.setName(resourceIdToString(textId));
                         if (iconId != null) {

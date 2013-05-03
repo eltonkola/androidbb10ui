@@ -7,7 +7,6 @@ import org.xmlpull.v1.XmlPullParser;
 import com.eltonkola.bb10ui.R;
 import com.eltonkola.bb10ui.slide.SlideMenuEvents.OnSlideMenuItemClickListener;
 import com.eltonkola.bb10ui.utils.Utils;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -51,9 +50,13 @@ public class LeftSlideView extends LinearLayout {
 	private TranslateAnimation slideRightAnim;
 	private TranslateAnimation slideMenuLeftAnim;
 	private TranslateAnimation slideContentLeftAnim;
-	private ArrayList<MenuItem> menuItemList;
+	private ArrayList<BB10SlideMenuItem> menuItemList;
 	private OnSlideMenuItemClickListener callback;
 
+	
+	private int selectedIndex=0;
+	
+	
 	/**
 	 * Constructor used by the inflation apparatus.
 	 * To be able to use the SlideMenu, call the {@link #init init()} method.
@@ -82,7 +85,7 @@ public class LeftSlideView extends LinearLayout {
 	 */
 	public LeftSlideView(Activity act, int menuResource, OnSlideMenuItemClickListener cb) {
 		super(act);
-		init(act, menuResource, cb);
+		init(act,0, menuResource, cb);
 	}
 
 	/**
@@ -99,11 +102,14 @@ public class LeftSlideView extends LinearLayout {
 	 * If inflated from XML, initializes the SlideMenu.
 	 * @param act The calling activity.
 	 * @param menuResource Menu resource identifier, can be 0 for an empty SlideMenu.
+	 * @param selectedTab 
 	 * @param cb Callback to be invoked on menu item click.
 	 * @param slideDuration Slide in/out duration in milliseconds.
 	 */
-	public void init(Activity act, int menuResource, OnSlideMenuItemClickListener cb) {
+	public void init(Activity act, int menuResource, int selectedTab, OnSlideMenuItemClickListener cb) {
 
+		this.selectedIndex = selectedTab;
+		
 		this.act = act;
 		this.callback = cb;
 
@@ -124,11 +130,37 @@ public class LeftSlideView extends LinearLayout {
 		// and get our menu
 		parseXml(menuResource);
 	}
+	
+	
+	public void init(Activity act, ArrayList<BB10SlideMenuItem> menuItemList, int selectedTab, OnSlideMenuItemClickListener cb) {
+
+		this.selectedIndex = selectedTab;
+		
+		this.act = act;
+		this.callback = cb;
+
+		// set size
+		menuSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 250, act.getResources().getDisplayMetrics());
+
+		// create animations accordingly
+		slideRightAnim = new TranslateAnimation(-menuSize, 0, 0, 0);
+		slideRightAnim.setDuration(Utils.slideDuration);
+		slideRightAnim.setFillAfter(true);
+		slideMenuLeftAnim = new TranslateAnimation(0, -menuSize, 0, 0);
+		slideMenuLeftAnim.setDuration(Utils.slideDuration*3/2);
+		slideMenuLeftAnim.setFillAfter(true);
+		slideContentLeftAnim = new TranslateAnimation(menuSize, 0, 0, 0);
+		slideContentLeftAnim.setDuration(Utils.slideDuration*3/2);
+		slideContentLeftAnim.setFillAfter(true);
+
+		this.menuItemList = menuItemList;
+	
+	}
 
 	 /* Dynamically adds a menu item.
 	 * @param item
 	 */
-	public void addMenuItem(MenuItem item) {
+	public void addMenuItem(BB10SlideMenuItem item) {
 		menuItemList.add(item);
 	}
 
@@ -141,6 +173,12 @@ public class LeftSlideView extends LinearLayout {
 	}
 
 
+//	public void refreshList(){
+//		ListView list = (ListView) act.findViewById(R.id.menu_listview);
+//		BB10SlideMenuItemAdapter adap = new BB10SlideMenuItemAdapter(getContext(),menuItemList, selectedIndex);
+//		list.setAdapter(adap);
+//	}
+//	
 
 	/**
 	 * Slide the menu in.
@@ -228,7 +266,7 @@ public class LeftSlideView extends LinearLayout {
 
 		// connect the menu's listview
 		ListView list = (ListView) act.findViewById(R.id.menu_listview);
-		MenuItemAdapter adap = new MenuItemAdapter(getContext(),menuItemList, 2);
+		BB10SlideMenuItemAdapter adap = new BB10SlideMenuItemAdapter(getContext(),menuItemList, selectedIndex);
 		list.setAdapter(adap);
 		list.setOnItemClickListener(new OnItemClickListener() {
 			@Override
@@ -322,7 +360,7 @@ public class LeftSlideView extends LinearLayout {
 	// credit where credits due!
 	private void parseXml(int menu){
 
-		menuItemList = new ArrayList<MenuItem>();
+		menuItemList = new ArrayList<BB10SlideMenuItem>();
 
 		// use 0 id to indicate no menu (as specified in JavaDoc)
 		if(menu == 0) return;
@@ -347,7 +385,7 @@ public class LeftSlideView extends LinearLayout {
 						String iconId = xpp.getAttributeValue("http://schemas.android.com/apk/res/android", "icon");
 						String resId = xpp.getAttributeValue("http://schemas.android.com/apk/res/android", "id");
 
-						MenuItem item = new MenuItem();
+						BB10SlideMenuItem item = new BB10SlideMenuItem();
 						item.setId(Integer.valueOf(resId.replace("@", "")));
 						if (iconId != null) {
 							item.setIcon(Integer.valueOf(iconId.replace("@", "")));
@@ -365,18 +403,6 @@ public class LeftSlideView extends LinearLayout {
 				
 			}
 
-
-			MenuItem itemx = new MenuItem();
-			//itemx.setId(0);
-			itemx.setName("Elton Kola");
-			itemx.setDescription("Berri i Zi");
-			itemx.setIcon(R.drawable.icon_viewimage);
-			itemx.setNew_icon(true);
-			itemx.setNew_nr(666);
-
-			menuItemList.add(itemx);
-			
-			
 		} catch(Exception e){
 			e.printStackTrace();
 		}

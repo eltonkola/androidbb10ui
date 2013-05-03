@@ -17,16 +17,99 @@
         android:label="@string/app_name"
         android:theme="@style/BB10" 
         android:hardwareAccelerated="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"
         >
+        
         <activity
             android:name="com.eltonkola.bb10uidemo.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+    
+    	<activity
+	        android:name="com.eltonkola.bb10uidemo.SimpleActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.ListActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.FormsActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.TopMenuActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.ExpandableListActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.FragmentActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.PreferencesActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.LeftTabsActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.RightMenuActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.NavigationButtonsActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.NavigationTabsActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.NavigationMixActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.Complex1Activity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.Complex2Activity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.DynamicActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.Complex1Activity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.Complex2Activity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    
+	    <activity
+	        android:name="com.eltonkola.bb10uidemo.DynamicActivity"
+	    	android:configChanges="orientation|screenSize|keyboardHidden"
+	        />
+	    
+	    
     </application>
+    
+    
 
 </manifest>
