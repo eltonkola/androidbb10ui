@@ -201,82 +201,84 @@ public final class R {
         public static int top_menu=0x7f020082;
     }
     public static final class id {
-        public static int actionbar_but1=0x7f090003;
-        public static int actionbar_but2=0x7f090004;
-        public static int actionbar_but3=0x7f090005;
-        public static int actionbar_but4=0x7f090006;
-        public static int actionbar_left=0x7f090000;
-        public static int actionbar_left_icon=0x7f090001;
-        public static int actionbar_right=0x7f090007;
-        public static int content=0x7f09000c;
-        public static int custom_menu_item_caption=0x7f090010;
-        public static int custom_menu_item_icon=0x7f09000f;
-        public static int custom_menu_table=0x7f09000e;
-        public static int icon_new=0x7f090002;
-        public static int leftSlide=0x7f090009;
-        public static int main_center=0x7f09000a;
-        public static int menu_container=0x7f09000b;
-        public static int menu_description=0x7f090014;
-        public static int menu_icon=0x7f090011;
-        public static int menu_listview=0x7f090015;
-        public static int menu_name=0x7f090013;
-        public static int new_nr=0x7f090012;
-        public static int overlay=0x7f090016;
-        public static int rightSlide=0x7f09000d;
-        public static int shadow=0x7f090019;
-        public static int side_navigation_listview=0x7f09001a;
-        public static int side_navigation_menu=0x7f090018;
-        public static int side_navigation_outside_view=0x7f090017;
-        public static int superRoot=0x7f090008;
+        public static int actionbar_but1=0x7f070004;
+        public static int actionbar_but2=0x7f070005;
+        public static int actionbar_but3=0x7f070006;
+        public static int actionbar_but4=0x7f070007;
+        public static int actionbar_left=0x7f070001;
+        public static int actionbar_left_icon=0x7f070002;
+        public static int actionbar_right=0x7f070008;
+        public static int content=0x7f07000d;
+        public static int custom_menu_item_caption=0x7f070011;
+        public static int custom_menu_item_icon=0x7f070010;
+        public static int custom_menu_table=0x7f07000f;
+        public static int icon_new=0x7f070003;
+        public static int leftSlide=0x7f07000a;
+        public static int list_act=0x7f070000;
+        public static int main_center=0x7f07000b;
+        public static int menu_container=0x7f07000c;
+        public static int menu_description=0x7f070015;
+        public static int menu_icon=0x7f070012;
+        public static int menu_listview=0x7f070016;
+        public static int menu_name=0x7f070014;
+        public static int new_nr=0x7f070013;
+        public static int overlay=0x7f070017;
+        public static int rightSlide=0x7f07000e;
+        public static int shadow=0x7f07001a;
+        public static int side_navigation_listview=0x7f07001b;
+        public static int side_navigation_menu=0x7f070019;
+        public static int side_navigation_outside_view=0x7f070018;
+        public static int superRoot=0x7f070009;
     }
     public static final class layout {
         public static int actionbar=0x7f030000;
         public static int bb10activity=0x7f030001;
         public static int custom_menu=0x7f030002;
         public static int custom_menu_item=0x7f030003;
-        public static int row_sides=0x7f030004;
-        public static int slide_left=0x7f030005;
-        public static int slide_right=0x7f030006;
+        public static int listactivity=0x7f030004;
+        public static int row_sides=0x7f030005;
+        public static int slide_left=0x7f030006;
+        public static int slide_right=0x7f030007;
     }
     public static final class string {
-        public static int app_name=0x7f070000;
+        public static int app_name=0x7f080000;
     }
     public static final class style {
         /**  BB10 theme 
  	<item name="android:imageButtonStyle">@style/BB10.Button</item>
  
          */
-        public static int BB10=0x7f080000;
-        public static int BB10_AlertDialog=0x7f080007;
-        public static int BB10_Button=0x7f080002;
-        public static int BB10_CheckBox=0x7f08000a;
-        public static int BB10_Dialog=0x7f080008;
-        public static int BB10_DropDownItem=0x7f080011;
-        public static int BB10_EditText=0x7f080006;
-        public static int BB10_ListView=0x7f080003;
+        public static int BB10=0x7f090000;
+        public static int BB10_AlertDialog=0x7f090007;
+        public static int BB10_Button=0x7f090002;
+        public static int BB10_CheckBox=0x7f09000a;
+        public static int BB10_Dialog=0x7f090008;
+        public static int BB10_DropDownItem=0x7f090011;
+        public static int BB10_EditText=0x7f090006;
+        public static int BB10_ListView=0x7f090003;
         /**  
         <item name="android:animationResolution">33</item>
          
          */
-        public static int BB10_ProgressBar=0x7f08000d;
-        public static int BB10_ProgressBar_Horizontal=0x7f08000c;
+        public static int BB10_ProgressBar=0x7f09000d;
+        public static int BB10_ProgressBar_Horizontal=0x7f09000c;
         /**  
         <item name="android:animationResolution">33</item>
          
          */
-        public static int BB10_ProgressBar_Large=0x7f08000f;
+        public static int BB10_ProgressBar_Large=0x7f09000f;
         /**  
         <item name="android:animationResolution">33</item>
          
          */
-        public static int BB10_ProgressBar_Small=0x7f08000e;
-        public static int BB10_Radio=0x7f080009;
-        public static int BB10_SeekBar=0x7f08000b;
-        public static int BB10_Spinner=0x7f080010;
-        public static int BB10_SpinnerItem=0x7f080005;
-        public static int BB10_TextView=0x7f080004;
+        public static int BB10_ProgressBar_Small=0x7f09000e;
+        public static int BB10_Radio=0x7f090009;
+        public static int BB10_SeekBar=0x7f09000b;
+        public static int BB10_Spinner=0x7f090010;
+        public static int BB10_SpinnerItem=0x7f090005;
+        public static int BB10_TextView=0x7f090004;
         /**  BB10 widgets 
          */
-        public static int BB10_Toggle=0x7f080001;
+        public static int BB10_Toggle=0x7f090001;
     }
 }

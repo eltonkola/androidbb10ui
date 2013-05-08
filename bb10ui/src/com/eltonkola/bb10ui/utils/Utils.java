@@ -11,7 +11,7 @@ public class Utils {
 	
 	
 	//if we are in developemnt mode, or not
-	public static boolean development = true;
+	public static boolean development = false;
 
 
 	public static long slideDuration = 300;

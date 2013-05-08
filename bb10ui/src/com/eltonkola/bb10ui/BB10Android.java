@@ -22,6 +22,7 @@ import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -45,22 +46,34 @@ public class BB10Android {
 	
     private BB10SuperHelper superHelper;
 	
+    
+    public void logsEnabled(boolean logx){
+    	Utils.development = logx;
+    }
+    
 	public BB10Android(Activity activity) {
+		Utils.log("BB10Android create BB10Android");
 		mActivity = activity;
 		superHelper= (BB10SuperHelper)mActivity;
 	}
 
 	
 	public void onCreate(Bundle savedInstanceState) {
+		Utils.log("BB10Android onCreate");
 		superHelper.super_onCreate(savedInstanceState);
 		mActivity.requestWindowFeature(Window.FEATURE_NO_TITLE);
 	}
 	
 	public void setContentView(int layoutResID) {
+		Utils.log("BB10Android setContentView:" + layoutResID);
 		superHelper.super_setContentView(R.layout.bb10activity);
 		FrameLayout content = (FrameLayout)mActivity.findViewById(R.id.content);
 		View mainView = LayoutInflater.from(mActivity.getBaseContext()).inflate(layoutResID, null);
 		FrameLayout.LayoutParams params = new  FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+		
+//		content.removeAllViews();
+//		content.removeAllViewsInLayout();
+		
 		content.addView(mainView, 0, params);
 		FrameLayout superRoot = (FrameLayout)mActivity.findViewById(R.id.superRoot);
 		superRoot.setBackgroundDrawable(mainView.getBackground());
@@ -68,8 +81,13 @@ public class BB10Android {
 	}
 
 	public void setContentView(View view, LayoutParams params) {
+		Utils.log("BB10Android setContentView:" + view + " - " + params);
 		superHelper.super_setContentView(view, params);
 		FrameLayout content = (FrameLayout)mActivity.findViewById(R.id.content);
+		
+//		content.removeAllViews();
+//		content.removeAllViewsInLayout();
+		
 		content.addView(view, 0, params);
 		FrameLayout superRoot = (FrameLayout)mActivity.findViewById(R.id.superRoot);
 		superRoot.setBackgroundDrawable(view.getBackground());
@@ -77,7 +95,7 @@ public class BB10Android {
 	}
 	
 	private void init(){
-
+		Utils.log("BB10Android init");
 		menu_container = (LinearLayout)mActivity.findViewById(R.id.menu_container);
 		
 		actionbar_left = (RelativeLayout)mActivity.findViewById(R.id.actionbar_left);
@@ -160,6 +178,7 @@ public class BB10Android {
 	}
 
     public void onBackPressed() {
+    	Utils.log("BB10Android onBackPressed");
         if (rightSlide.isShown()) {
         	rightSlide.hideMenu();
         } else {
@@ -510,5 +529,7 @@ public class BB10Android {
 	 		}			
 	      mMenu.show(menu_container);
 		}
-	}	    
+	}
+
+	
 }
